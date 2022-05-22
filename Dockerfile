@@ -1,5 +1,5 @@
 FROM python:3.7-slim-buster
-LABEL maintainer="yobot"
+LABEL maintainer="tekky03"
 
 ENV PYTHONIOENCODING=utf-8
 
