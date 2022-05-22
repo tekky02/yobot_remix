@@ -5,7 +5,7 @@ ENV PYTHONIOENCODING=utf-8
 
 ADD src/client/ /yobot
 
-RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo 'Asia/Shanghai' >/etc/timezone \
     && cd /yobot \
     && pip3 install aiocqhttp==0.6.8 Quart==0.6.15 --no-cache-dir \
